@@ -8,8 +8,20 @@
 </head>
 
 <body>
-  sample jhbdcsjdhbchjbsdc
-  xxxxxx
+  <center>
+    <img
+      src="https://djjfywtrsgtknscidxxu.supabase.co/storage/v1/object/public/ASP%20logos/ASP%20Alumni%20Logo%20Navy%20general%20RGB%20transparent%20background.png"
+      width="150">
+    <h2>Confirm your signup</h2>
+  </center>
+
+  Thank you for your request to log into the ASP Alumni Portal.
+  <p>Follow this link to confirm your account: </p>
+  <p><a href="{{ .SiteURL }}/verify-otp?code={{ .Token }}&email={{ .Email }}&type=signup_email_verification">Confirm
+      your mail</a></p>
+  <p>Or, insert the token number {{ .Token }} manually.</p>
+  <p>Please do not reply to this email as it is auto generated.
+    For any questions, contact: <u><b>alumni@asparis.fr</b></u></p>
 </body>
 
 </html>
