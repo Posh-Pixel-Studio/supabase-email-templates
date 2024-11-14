@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h2>You have been invited</h2>
+  <p>You have been invited to create a user on {{ .SiteURL }}. Follow this link to accept the invite:</p>
+  <p><a href="{{ .SiteURL }}/verify-otp?code={{ .Token }}&email={{ .Email }}&type=invitation">Accept the invite</a></p>
+  <p>Or, insert the token number {{ .Token }} manually.</p>
+  <p>Please do not reply to this email as it is auto generated.
+    For any questions, contact: <u><b>alumni@asparis.fr</b></u></p>
+</body>
+
+</html>
